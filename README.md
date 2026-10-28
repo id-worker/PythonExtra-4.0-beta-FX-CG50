@@ -8,8 +8,13 @@ PythonExtra is an extended **MicroPython** interpreter add-in built on the [`gin
 
 | File | Size | Base | Description |
 | :--- | ---: | :---: | :--- |
-| **`PythonExtra.g3a`** | 313,100 B | `pe-0.4.0-beta` + MicroPython `3.4.0` (2026-10-26) + `gint@dev` (Oct 2026) | **Recommended** — clean Release rebuilt from source for OS 3.81, verified on real fx-CG50 |
+| **`PythonExtra.g3a`** | 313,100 B | Banner: `3.4.0; MicroPython 1ee197f on 2026-10-26`; beta 0.4 lineage indicated | Tested on a real fx-CG50 with OS 3.81; exact build provenance and toolchain have not been independently verified |
 | **`PythonExtra-201778.g3a`** | 314,116 B | `pe-0.4.0-beta` + MicroPython `v1.25.0-preview` (CI build #201778, 2026-02-22) | Upstream CI build kept for reference / rollback |
+
+The string `3.4.0` occurs in the banner, but is **not** the MicroPython
+version. The examined source lineage uses a MicroPython 1.25.0 prerelease;
+without the original build log this does not prove the exact source, compiler
+or configuration used for the distributed binary.
 
 ## Installation
 
@@ -25,7 +30,7 @@ PythonExtra is an extended **MicroPython** interpreter add-in built on the [`gin
 - **MicroPython** — by **Damien George** and the MicroPython team: <https://github.com/micropython/micropython> (MIT).
 - **gint** — by **Lephenixnoir**: <https://git.planet-casio.com/Lephenixnoir/gint>.
 
-Both projects are licensed under the **MIT License** — see [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for the reproduced permission notice and full attribution. Keep this notice alongside the binaries when redistributing.
+The PythonExtra/MicroPython upstream license is MIT for the parts it covers; individual files and linked components can have additional notices. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) and the verbatim upstream [`LICENSE`](licenses/PythonExtra_upstream_LICENSE.txt). Exact binary build provenance and the completeness of binary dependency notices remain to be checked.
 
 *CASIO, PRIZM and fx-CG50 are trademarks of CASIO COMPUTER CO., LTD. Unofficial third-party software; not affiliated with CASIO.*
 

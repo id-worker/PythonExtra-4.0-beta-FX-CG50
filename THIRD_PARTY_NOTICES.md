@@ -14,7 +14,12 @@ The binaries in this repository (`PythonExtra.g3a`, `PythonExtra-201778.g3a`) ar
 - **Upstream:** <https://github.com/micropython/micropython>
 - **License:** MIT.
 
-### MIT License (reproduced, governs the above projects)
+### MIT permission text
+
+The exact upstream license, including the original copyright line and the
+third-party-components note, is preserved separately in
+[`licenses/PythonExtra_upstream_LICENSE.txt`](licenses/PythonExtra_upstream_LICENSE.txt).
+Individual source files can contain additional notices.
 
 ```text
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -38,7 +43,7 @@ THE SOFTWARE.
 
 ### Build identification strings inside the binaries
 
-- `PythonExtra.g3a` → `3.4.0; MicroPython 1ee197f on 2026-10-26` (base `pe-0.4.0-beta`, `gint@dev` Oct 2026, rebuilt for OS 3.81).
+- `PythonExtra.g3a` → `3.4.0; MicroPython 1ee197f on 2026-10-26`. Source comparisons indicate beta 0.4 lineage; the original build log, compiler and exact configuration are not available.
 - `PythonExtra-201778.g3a` → `3.4.0; MicroPython v1.25.0-preview.602.gfca9b039f on 2026-02-22` (upstream CI build #201778).
 
-> **Redistribution summary (MIT):** the binaries may be redistributed provided this attribution and the MIT permission notice are kept alongside them.
+> **Redistribution review:** retain the applicable upstream copyright and permission notices, and verify the notices/terms of actually linked third-party components. The incomplete build provenance prevents certifying that this list is exhaustive.
